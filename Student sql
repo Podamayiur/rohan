@@ -1,0 +1,50 @@
+1.Creating the "students" table
+
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  age INTEGER,
+  gender TEXT
+);
+
+2.Inserting three rows of data into the "students" table:
+
+INSERT INTO students (name, age, gender) VALUES ('John', 20, 'Male');
+INSERT INTO students (name, age, gender) VALUES ('Mary', 18, 'Female');
+INSERT INTO students (name, age, gender) VALUES ('Bob', 22, 'Male');
+
+3.Retrieving all rows from the "students" table:
+
+SELECT * FROM students;
+
+The result should be:
+
+id  | name | age | gender
+----|------|-----|-------
+1   | John | 20  | Male
+2   | Mary | 18  | Female
+3   | Bob  | 22  | Male
+
+
+4. Updating the name of the student with id = 2 to "Janet":
+
+UPDATE students SET name = 'Janet' WHERE id = 2;
+
+5.Deleting the row with id = 3 from the "students" table:
+
+DELETE FROM students WHERE id = 3;
+
+SELECT * FROM students;
+
+Result:
+
+id  | name  | age | gender
+----|-------|-----|-------
+1   | John  | 20  | Male
+2   | Janet | 18  | Female
+
+
+
+
+
+
