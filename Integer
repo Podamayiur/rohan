@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int input;
+    cout << "Enter an integer: ";
+    cin >> input;
+
+    cout << "Even numbers from 0 to " << input << " are: ";
+    for (int i = 0; i <= input; i += 2) {
+        cout << i << " ";
+    }
+
+    return 0;
+}
